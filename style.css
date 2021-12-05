@@ -1,0 +1,11 @@
+body{
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    width: 300px;
+    box-shadow: black 20px 10px 50px;
+}
