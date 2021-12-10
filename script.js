@@ -190,6 +190,8 @@ function checkAppleCollision(){
         appleB = Math.floor(Math.random() * tileCount);
         appleC = Math.floor(Math.random() * tileCount);
         appleD = Math.floor(Math.random() * tileCount);
+        appleE = Math.floor(Math.random() * tileCount);
+        appleF = Math.floor(Math.random() * tileCount);
         tallLength++;
         score++;
         speed++;
@@ -201,6 +203,8 @@ function checkAppleCollision(){
         appleB = Math.floor(Math.random() * tileCount);
         appleC = Math.floor(Math.random() * tileCount);
         appleD = Math.floor(Math.random() * tileCount);
+        appleE = Math.floor(Math.random() * tileCount);
+        appleF = Math.floor(Math.random() * tileCount);
         score++;
         speed++;
     }
