@@ -68,15 +68,6 @@ function drawGame(){
     drawApple();
     drawSnake();
     drawScore();
-    if(score >= 3){
-        drawRottenApple()
-    }
-    if(score >= 4){
-        drawGreenApple()
-    }
-    if(score >= 5){
-        drawRottenApple1()
-    }
     setTimeout(drawGame, 1000/ speed);
 }
 
@@ -127,8 +118,26 @@ function isGameOver(){
 
 function drawScore(){
     ctx.fillStyle = 'white';
-    ctx.font = "10 px Verdana"
+    ctx.font = "10px Verdana"
     ctx.fillText("Score: " + score, canvas.width-50, 10);
+    if(score >= 3){
+        drawRottenApple();
+    } else if (score < 3) {
+        appleA = 0;
+        appleB = 0;
+    }
+    if(score >= 4){
+        drawGreenApple();
+    } else if(score < 4) {
+        appleC = 0;
+        appleD = 0;
+    }
+    if(score >= 5){
+        drawRottenApple1();
+    } else if(score < 5) {
+        appleE = 0;
+        appleF = 0;
+    }
 }
 
 function clearScreen(){
@@ -158,7 +167,7 @@ function changeSnakePosition(){
 }
 function drawApple(){
     ctx.fillStyle = 'red';
-    ctx.fillRect(appleX *tileCount,appleY * tileCount,tileSize,tileSize);
+    ctx.fillRect(appleX * tileCount,appleY * tileCount,tileSize,tileSize);
 }
 
 function drawGreenApple(){
