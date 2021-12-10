@@ -18,12 +18,12 @@ let tallLength = 2;
 
 let appleX = 5;
 let appleY = 5;
-let appleA = 6;
-let appleB = 6;
-let appleC = 7;
-let appleD = 7;
-let appleE = 8;
-let appleF = 8;
+let appleA = -1;
+let appleB = -1;
+let appleC = -1;
+let appleD = -1;
+let appleE = -1;
+let appleF = -1;
 
 let inputsxVelocity = 0;
 let inputsyVelocity = 0;
@@ -122,21 +122,12 @@ function drawScore(){
     ctx.fillText("Score: " + score, canvas.width-50, 10);
     if(score >= 3){
         drawRottenApple();
-    } else if (score < 3) {
-        appleA = 0;
-        appleB = 0;
     }
     if(score >= 4){
         drawGreenApple();
-    } else if(score < 4) {
-        appleC = 0;
-        appleD = 0;
     }
     if(score >= 5){
         drawRottenApple1();
-    } else if(score < 5) {
-        appleE = 0;
-        appleF = 0;
     }
 }
 
